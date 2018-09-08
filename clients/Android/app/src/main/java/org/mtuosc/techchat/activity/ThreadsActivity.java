@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import org.mtuosc.techchat.R;
 
 public class ThreadsActivity extends AppCompatActivity {
+    private String boardId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,11 @@ public class ThreadsActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // get the board id and make a request
+        boardId = getIntent().getStringExtra("board_id");
+
+        // make the api call to get threads
 
 
 
