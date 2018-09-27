@@ -31,3 +31,6 @@ Heroku is a free hosting service for small projects. Easily setup and deploy fro
 ### Deployment
 1. Deploy from the Heroku web interface
 3. Run `heroku ps:scale web=1`  
+
+
+https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
