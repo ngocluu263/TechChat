@@ -1,0 +1,5 @@
+http://127.0.0.1:8000/web/login/
+
+admin@test.com / password
+
+admin2@test.com / password
