@@ -32,7 +32,7 @@ Heroku is a free hosting service for small projects. Easily setup and deploy fro
 1. Deploy from the Heroku web interface
 3. Run `heroku ps:scale web=1`  
 
-================Install===============
+================Install Custom by Me===============
 https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
 
 "c:\Python37-32\python.exe" -m pip install --user virtualenv
@@ -42,3 +42,8 @@ https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
 "c:\Python37-32\python.exe" -m virtualenv env
 
 .\env\Scripts\activate
+
+Add: 
+
+
+c:\Python37-32\python.exe manage.py migrate --run-syncdb

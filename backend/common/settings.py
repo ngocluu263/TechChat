@@ -79,12 +79,19 @@ WSGI_APPLICATION = 'common.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-DATABASES = {}
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 # Setup MongoEngine
-mongoengine.connect(host=os.getenv("HOST"))
-
+# mongoengine.connect(db='tech_chat', host='172.16.4.121', username='stdev', password='stdev')
+mongoengine.connect(db='tech_chat', alias='default', host='172.16.4.121',
+            username='stdev',
+            password='stdev',
+            authentication_source='admin', connect=False)
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

@@ -25,6 +25,13 @@ class User(Document):
 
     login_manager = LoginManager()
     def check_password(self, password):
+        print("TEST USER")
+        print(os.getenv('ENCODING'))
         a = password.encode(os.getenv('ENCODING'))
+        print(a)
         b = self.password.encode(os.getenv('ENCODING'))
-        return bcrypt.checkpw(a, b)
+        print(b)
+        password_crypt = bcrypt.checkpw(a, b)
+        print('')
+        print(password_crypt)
+        return password_crypt
