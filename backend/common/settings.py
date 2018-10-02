@@ -87,11 +87,11 @@ DATABASES = {
 }
 
 # Setup MongoEngine
-# mongoengine.connect(db='tech_chat', host='172.16.4.121', username='stdev', password='stdev')
-mongoengine.connect(db='tech_chat', alias='default', host='172.16.4.121',
-            username='stdev',
-            password='stdev',
-            authentication_source='admin', connect=False)
+mongoengine.connect(db='tech_chat', host='127.0.0.1')
+# mongoengine.connect(db='tech_chat', alias='default', host='172.16.4.121',
+#             username='stdev',
+#             password='stdev',
+#             authentication_source='admin', connect=False)
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
