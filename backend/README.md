@@ -1,3 +1,39 @@
+
+Docker##
+docker run -p 8000:8000/tcp -p 27017:27017/tcp -v d:\cci-rad:/data -itd 787889cee386
+mongod -f /etc/mongod.conf  --bind_ip 0.0.0.0 &
+yum install redis
+redis-server &
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # TechChat Backend
 [![Build Status](http://heroku-badge.herokuapp.com/?app=open-source-at-mtu-tech-chat&root=api/&style=flat)](https://open-source-at-mtu-tech-chat.herokuapp.com/web/)
 
